@@ -8,7 +8,7 @@ public class FalsePositionMethod {
     static double precision = 0.0001;
 
     static double rootY(double x) {
-        return pow(x, 4) - 32;
+        return 2 * exp(x) * sin(x) - 3;
     }
 
     public static void outputIntervals() {

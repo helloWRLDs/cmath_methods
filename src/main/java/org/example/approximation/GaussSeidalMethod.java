@@ -6,15 +6,15 @@ public class GaussSeidalMethod {
     static double precision = 0.0001;
 
     static double xRoot(double y, double z) {
-        return ((double) 1 / 3) * (7.85 + 0.1 * y + 0.2 * z);
+        return ((double) 1 / 5) * (10 + y - z);
     }
 
     static double yRoot(double x, double z) {
-        return ((double ) 1 / 7) * (-19.3 - 0.1 * x + 0.3 * z);
+        return ((double ) 1 / 4) * (12 - 2 * x);
     }
 
     static double zRoot(double x, double y) {
-        return ((double ) 1 / 10) * (71.4 - 0.3 * x + 0.2* y);
+        return ((double ) 1 / 5) * (-1 - x - y);
     }
 
     public static void main(String[] args) {

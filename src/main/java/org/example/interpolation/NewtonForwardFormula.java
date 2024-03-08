@@ -27,17 +27,15 @@ public class NewtonForwardFormula {
 
     public static void main(String[] args) {
         // INPUT VALUES
-        double value = 2.4;
-        double[] x = new double[]{1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3};
+        double value = 2;
+        double[] x = new double[]{1.8, 2, 2.2, 2.4, 2.6};
         int n = x.length;
         double[][] y = new double[x.length][x.length];
-        y[0][0] = 5.474;
-        y[1][0] = 6.050;
-        y[2][0] = 6.686;
-        y[3][0] = 7.389;
-        y[4][0] = 8.166;
-        y[5][0] = 9.025;
-        y[6][0] = 9.974;
+        y[0][0] = 6.0496;
+        y[1][0] = 7.389;
+        y[2][0] = 9.025;
+        y[3][0] = 11.023;
+        y[4][0] = 13.464;
 
 
         for (int i = 1; i < n; i++) {

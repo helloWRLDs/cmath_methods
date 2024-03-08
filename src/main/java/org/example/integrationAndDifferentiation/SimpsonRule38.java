@@ -1,10 +1,12 @@
 package org.example.integrationAndDifferentiation;
 
+import static java.lang.Math.*;
+
 public class SimpsonRule38 {
     // Given function to be integrated
     static float func( float x)
     {
-        return (1 / ( 1 + x * x ));
+        return (float) (1 / (1 + pow(x, 2)));
     }
 
     // Function to perform calculations
@@ -33,9 +35,9 @@ public class SimpsonRule38 {
     // Driver program to test above function
     public static void main(String[] args)
     {
-        int interval_limit = 10;
-        float lower_limit = 1;
-        float upper_limit = 10;
+        int interval_limit = 6;
+        float lower_limit = (float) 0;
+        float upper_limit = (float) 6;
         float integral_res = calculate(lower_limit, upper_limit,
                 interval_limit);
 

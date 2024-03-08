@@ -1,13 +1,13 @@
 package org.example.integrationAndDifferentiation;
 
-import static java.lang.Math.pow;
+import static java.lang.Math.*;
+import static java.lang.Math.exp;
 
 public class SimpsonRuleFormula {
 
     // Function to calculate f(x)
-    static float func(float x)
-    {
-        return (float) (1 / (1 + pow(x, 2)));
+    static float func(float x) {
+        return (float) (exp(x) / (1 + x));
     }
 
     // Function for approximate integral
@@ -50,10 +50,10 @@ public class SimpsonRuleFormula {
         float lower_limit = 0;
 
         // Upper limit
-        float upper_limit = (float)6;
+        float upper_limit = 6;
 
         // Number of interval
-        int n = 6;
+        int n = 2;
 
         System.out.println(simpsons_(lower_limit,
                 upper_limit, n));

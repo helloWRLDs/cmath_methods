@@ -1,5 +1,8 @@
 package org.example.integrationAndDifferentiation;
 
+import static java.lang.Math.log1p;
+import static java.lang.Math.pow;
+
 class TrapezoidalRule {
     // A sample function whose definite
     // integral's approximate value
@@ -8,7 +11,7 @@ class TrapezoidalRule {
     static float y(float x) {
         // Declaring the function
         // f(x) = 1/(1+x*x)
-        return 1 / x;
+        return (float) (x * log1p(x));
     }
 
     // Function to evaluate the value of integral
@@ -35,11 +38,11 @@ class TrapezoidalRule {
     {
         // Range of definite integral
         float x0 = 1;
-        float xn = 3;
+        float xn = 2;
 
         // Number of grids. Higher
         // value means more accuracy
-        int n = 2;
+        int n = 5;
 
         System.out.println("Value of integral is "+
                 Math.round(trapezoidal(x0, xn, n)
